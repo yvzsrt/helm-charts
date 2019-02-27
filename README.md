@@ -20,4 +20,5 @@ When you make changes to charts, please make sure of the following:
 
 # Two ONT/RG conf
 1- for freeradius: user1 user has to be added
+
 2- for rg2: user1 has to be added to /etc/wpa_supplicant/wpa_supplicant.conf (sed -i 's/user/user1/g' wpa_supplicant.conf #no vi installed)
