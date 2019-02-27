@@ -17,7 +17,8 @@ pull_docker_registry:
 
 images:
   pon0:
-    repository: gopinatht/pon0-network
+#    repository: gopinatht/pon0-network
+    repository: 192.168.31.203:5000/gopinatht/pon0-network
     tag: 'latest'
     pullPolicy: 'Always'
   
