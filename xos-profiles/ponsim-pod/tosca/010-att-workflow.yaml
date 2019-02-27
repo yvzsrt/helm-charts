@@ -41,3 +41,14 @@ topology_template:
         - owner:
             node: service#att
             relationship: tosca.relationships.BelongsToOne
+
+    whitelist2:
+      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
+      properties:
+        serial_number: PSMO12345679
+        device_id: of:0000aabbccddeeff
+        pon_port_id: 1
+      requirements:
+        - owner:
+            node: service#att
+            relationship: tosca.relationships.BelongsToOne
