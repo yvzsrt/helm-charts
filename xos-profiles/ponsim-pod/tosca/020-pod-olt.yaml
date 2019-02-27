@@ -55,3 +55,13 @@ topology_template:
         - olt_device:
             node: olt_device
             relationship: tosca.relationships.BelongsToOne
+
+    pon2_port:
+      type: tosca.nodes.PONPort
+      properties:
+        name: pon2
+        port_no: 1
+      requirements:
+        - olt_device:
+            node: olt_device
+            relationship: tosca.relationships.BelongsToOne
